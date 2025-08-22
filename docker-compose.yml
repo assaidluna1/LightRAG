@@ -19,7 +19,7 @@ services:
       - .env
     environment:
       - TIKTOKEN_CACHE_DIR=/app/data/tiktoken
-      - AUTH_ACCOUNTS=admin:admin123
+      - AUTH_ACCOUNTS='admin:admin123'
     restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
